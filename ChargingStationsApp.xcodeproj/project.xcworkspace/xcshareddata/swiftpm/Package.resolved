@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
+        "version" : "5.6.2"
+      }
+    },
+    {
+      "identity" : "mlbasickit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alaattinbedir/MLBasicKit.git",
+      "state" : {
+        "revision" : "f0643ab891b841e9c34f69cb183a2807adda96c1",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "mlextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alaattinbedir/MLExtensions",
+      "state" : {
+        "revision" : "e27efe3bf11e6d7098d0b157ba1cac5183a8c1a4",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "mlnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alaattinbedir/MLNetworking.git",
+      "state" : {
+        "revision" : "8e49225b7484cb6536252b240ddf1535bac242a6",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		84321DC528BE50F5007CE42B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC428BE50F5007CE42B /* AppDelegate.swift */; };
 		84321DC728BE50F5007CE42B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC628BE50F5007CE42B /* SceneDelegate.swift */; };
-		84321DC928BE50F5007CE42B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC828BE50F5007CE42B /* ViewController.swift */; };
-		84321DCC28BE50F5007CE42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84321DCA28BE50F5007CE42B /* Main.storyboard */; };
 		84321DCE28BE50F7007CE42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84321DCD28BE50F7007CE42B /* Assets.xcassets */; };
 		84321DD128BE50F7007CE42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84321DCF28BE50F7007CE42B /* LaunchScreen.storyboard */; };
 		84321DDC28BE50F7007CE42B /* ChargingStationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DDB28BE50F7007CE42B /* ChargingStationsAppTests.swift */; };
 		84321DE628BE50F7007CE42B /* ChargingStationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DE528BE50F7007CE42B /* ChargingStationsAppUITests.swift */; };
 		84321DE828BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DE728BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift */; };
+		84321E0428BE540B007CE42B /* StationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0328BE540B007CE42B /* StationsVC.swift */; };
+		84321E0628BE5421007CE42B /* StationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0528BE5421007CE42B /* StationsVM.swift */; };
+		84321E0F28BE57B1007CE42B /* MLBasicKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E0E28BE57B1007CE42B /* MLBasicKit */; };
+		84321E1228BE57D2007CE42B /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E1128BE57D2007CE42B /* MLNetworking */; };
+		84321E1528BE593C007CE42B /* StationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1428BE593C007CE42B /* StationsApi.swift */; };
+		84321E1928BE5CD2007CE42B /* StationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1828BE5CD2007CE42B /* StationsResponse.swift */; };
+		84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF928BE5212007CE42B /* Keeper.swift */; };
+		84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DFA28BE5212007CE42B /* SessionKeeper.swift */; };
+		84321E1C28BE5DD6007CE42B /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF728BE51F3007CE42B /* AppDomain.swift */; };
+		84321E1D28BE5DDA007CE42B /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF628BE51F3007CE42B /* Endpoints.swift */; };
+		84321E1F28BE65C1007CE42B /* StationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84321E1E28BE65C1007CE42B /* StationsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		84321DC128BE50F5007CE42B /* ChargingStationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargingStationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84321DC428BE50F5007CE42B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84321DC628BE50F5007CE42B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84321DC828BE50F5007CE42B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84321DCB28BE50F5007CE42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84321DCD28BE50F7007CE42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84321DD028BE50F7007CE42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84321DD228BE50F7007CE42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		84321DE128BE50F7007CE42B /* ChargingStationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargingStationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84321DE528BE50F7007CE42B /* ChargingStationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationsAppUITests.swift; sourceTree = "<group>"; };
 		84321DE728BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84321DF628BE51F3007CE42B /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		84321DF728BE51F3007CE42B /* AppDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDomain.swift; sourceTree = "<group>"; };
+		84321DF928BE5212007CE42B /* Keeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keeper.swift; sourceTree = "<group>"; };
+		84321DFA28BE5212007CE42B /* SessionKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionKeeper.swift; sourceTree = "<group>"; };
+		84321E0328BE540B007CE42B /* StationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVC.swift; sourceTree = "<group>"; };
+		84321E0528BE5421007CE42B /* StationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVM.swift; sourceTree = "<group>"; };
+		84321E1428BE593C007CE42B /* StationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApi.swift; sourceTree = "<group>"; };
+		84321E1828BE5CD2007CE42B /* StationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsResponse.swift; sourceTree = "<group>"; };
+		84321E1E28BE65C1007CE42B /* StationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84321E0F28BE57B1007CE42B /* MLBasicKit in Frameworks */,
+				84321E1228BE57D2007CE42B /* MLNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +117,12 @@
 		84321DC328BE50F5007CE42B /* ChargingStationsApp */ = {
 			isa = PBXGroup;
 			children = (
-				84321DC428BE50F5007CE42B /* AppDelegate.swift */,
-				84321DC628BE50F5007CE42B /* SceneDelegate.swift */,
-				84321DC828BE50F5007CE42B /* ViewController.swift */,
-				84321DCA28BE50F5007CE42B /* Main.storyboard */,
-				84321DCD28BE50F7007CE42B /* Assets.xcassets */,
-				84321DCF28BE50F7007CE42B /* LaunchScreen.storyboard */,
-				84321DD228BE50F7007CE42B /* Info.plist */,
+				84321E0228BE52F7007CE42B /* AppDelegate */,
+				84321DF428BE51DA007CE42B /* Common */,
+				84321DFB28BE521C007CE42B /* Data */,
+				84321DFE28BE5237007CE42B /* Presentation */,
+				84321E0128BE52E6007CE42B /* Resources */,
+				84321E0028BE52B0007CE42B /* SupportingFiles */,
 			);
 			path = ChargingStationsApp;
 			sourceTree = "<group>";
@@ -127,6 +144,126 @@
 			path = ChargingStationsAppUITests;
 			sourceTree = "<group>";
 		};
+		84321DF428BE51DA007CE42B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84321DF828BE5207007CE42B /* Session */,
+				84321DF528BE51E3007CE42B /* ServiceConstants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84321DF528BE51E3007CE42B /* ServiceConstants */ = {
+			isa = PBXGroup;
+			children = (
+				84321DF728BE51F3007CE42B /* AppDomain.swift */,
+				84321DF628BE51F3007CE42B /* Endpoints.swift */,
+			);
+			path = ServiceConstants;
+			sourceTree = "<group>";
+		};
+		84321DF828BE5207007CE42B /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				84321DF928BE5212007CE42B /* Keeper.swift */,
+				84321DFA28BE5212007CE42B /* SessionKeeper.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		84321DFB28BE521C007CE42B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84321DFD28BE522C007CE42B /* Model */,
+				84321DFC28BE5224007CE42B /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84321DFC28BE5224007CE42B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84321E1328BE5918007CE42B /* Stations */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84321DFD28BE522C007CE42B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84321E1628BE5CAC007CE42B /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84321DFE28BE5237007CE42B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84321DFF28BE525B007CE42B /* Stations */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84321DFF28BE525B007CE42B /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				84321E0328BE540B007CE42B /* StationsVC.swift */,
+				84321E0528BE5421007CE42B /* StationsVM.swift */,
+				84321E1E28BE65C1007CE42B /* StationsVC.xib */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		84321E0028BE52B0007CE42B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84321DCF28BE50F7007CE42B /* LaunchScreen.storyboard */,
+				84321DD228BE50F7007CE42B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		84321E0128BE52E6007CE42B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84321DCD28BE50F7007CE42B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84321E0228BE52F7007CE42B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84321DC428BE50F5007CE42B /* AppDelegate.swift */,
+				84321DC628BE50F5007CE42B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84321E1328BE5918007CE42B /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				84321E1428BE593C007CE42B /* StationsApi.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		84321E1628BE5CAC007CE42B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				84321E1728BE5CB6007CE42B /* Stations */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		84321E1728BE5CB6007CE42B /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				84321E1828BE5CD2007CE42B /* StationsResponse.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +280,10 @@
 			dependencies = (
 			);
 			name = ChargingStationsApp;
+			packageProductDependencies = (
+				84321E0E28BE57B1007CE42B /* MLBasicKit */,
+				84321E1128BE57D2007CE42B /* MLNetworking */,
+			);
 			productName = ChargingStationsApp;
 			productReference = 84321DC128BE50F5007CE42B /* ChargingStationsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +356,10 @@
 				Base,
 			);
 			mainGroup = 84321DB828BE50F5007CE42B;
+			packageReferences = (
+				84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */,
+				84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */,
+			);
 			productRefGroup = 84321DC228BE50F5007CE42B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +378,7 @@
 			files = (
 				84321DD128BE50F7007CE42B /* LaunchScreen.storyboard in Resources */,
 				84321DCE28BE50F7007CE42B /* Assets.xcassets in Resources */,
-				84321DCC28BE50F5007CE42B /* Main.storyboard in Resources */,
+				84321E1F28BE65C1007CE42B /* StationsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +403,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84321DC928BE50F5007CE42B /* ViewController.swift in Sources */,
+				84321E0428BE540B007CE42B /* StationsVC.swift in Sources */,
+				84321E1928BE5CD2007CE42B /* StationsResponse.swift in Sources */,
 				84321DC528BE50F5007CE42B /* AppDelegate.swift in Sources */,
 				84321DC728BE50F5007CE42B /* SceneDelegate.swift in Sources */,
+				84321E1D28BE5DDA007CE42B /* Endpoints.swift in Sources */,
+				84321E1C28BE5DD6007CE42B /* AppDomain.swift in Sources */,
+				84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */,
+				84321E1528BE593C007CE42B /* StationsApi.swift in Sources */,
+				84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */,
+				84321E0628BE5421007CE42B /* StationsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +449,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84321DCA28BE50F5007CE42B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84321DCB28BE50F5007CE42B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84321DCF28BE50F7007CE42B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +583,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KHRD8446CX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChargingStationsApp/Info.plist;
+				INFOPLIST_FILE = ChargingStationsApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +610,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KHRD8446CX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChargingStationsApp/Info.plist;
+				INFOPLIST_FILE = ChargingStationsApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +744,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alaattinbedir/MLBasicKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alaattinbedir/MLNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84321E0E28BE57B1007CE42B /* MLBasicKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */;
+			productName = MLBasicKit;
+		};
+		84321E1128BE57D2007CE42B /* MLNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */;
+			productName = MLNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84321DB928BE50F5007CE42B /* Project object */;
 }
