@@ -11,7 +11,9 @@ import Combine
 import MapKit
 
 class StationsVC: BaseVC<StationsVM> {
+
     // MARK: - Vars & Lets
+
     var subscribers: [AnyCancellable] = []
     var locationUpdateTimer: Timer?
 
@@ -39,20 +41,13 @@ class StationsVC: BaseVC<StationsVM> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bind()
+        configureComponents()
         viewModel.fetchChargingStations()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopTimer()
-    }
-
-    func stopTimer()     {
-        if locationUpdateTimer != nil {
-            locationUpdateTimer!.invalidate()
-            locationUpdateTimer = nil
-        }
     }
 
     deinit {
@@ -63,16 +58,16 @@ class StationsVC: BaseVC<StationsVM> {
 // MARK: Configure the components
 
 extension StationsVC {
-    func bind() {
-        configureMapView()
+    func configureComponents() {
         configureTimer()
+        configureMapView()
     }
 
     func configureTimer() {
         viewModel.$loadingState
             .sink { [weak self] (loadingState) in
                 guard let self = self else { return }
-                
+
                 switch loadingState {
                 case .loading:
                     self.stopTimer()
@@ -97,12 +92,19 @@ extension StationsVC {
         }
     }
 
+    func stopTimer()     {
+        if locationUpdateTimer != nil {
+            locationUpdateTimer!.invalidate()
+            locationUpdateTimer = nil
+        }
+    }
+
     @objc func runLocationTimer() {
         viewModel.fetchChargingStations()
     }
 
     func configureMapView() {
-        // Set initial location in Berlin
+        // Set initial location to Berlin
         let initialLocation = CLLocation(latitude: Keeper.shared.latitude, longitude: Keeper.shared.longitude)
         mapView.centerToLocation(initialLocation)
 

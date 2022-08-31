@@ -1,9 +1,8 @@
 //
 //  Session.swift
-//  PhotoApp
+//  ChargingStationsApp
 //
-//  Created by Alaattin Bedir on 2.03.2019.
-//  Copyright © 2019 Alaattin Bedir. All rights reserved.
+//  Created by Alaattin Bedir on 30.08.2022.
 //
 
 class SessionKeeper {

@@ -1,8 +1,8 @@
 //
 //  AppDomain.swift
-//  WeatherToday
+//  ChargingStationsApp
 //
-//  Created by Alaattin Bedir on 8.06.2022.
+//  Created by Alaattin Bedir on 30.08.2022.
 //
 
 

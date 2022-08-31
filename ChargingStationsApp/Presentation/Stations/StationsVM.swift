@@ -11,7 +11,6 @@ import Combine
 import CoreLocation
 
 class StationsVM: BaseVM {
-    @Published var stations: StationsResponse? = nil
     @Published var artworks: [Artwork] = []
 
     private let apiService: StationsApiServiceProtocol
@@ -36,7 +35,6 @@ extension StationsVM {
         apiService.fetchStations(params: params) { [weak self] (stations) in
             guard let self = self else { return }
 
-            self.stations = stations
             self.artworks = stations.map {
                 let title = $0.addressInfo?.title
                 let addressLine1 = $0.addressInfo?.addressLine1 ?? ""

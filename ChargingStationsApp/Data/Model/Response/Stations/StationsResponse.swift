@@ -28,7 +28,6 @@ struct AddressInfo: Codable {
     let distanceUnit: Int?
     let title, town: String?
     let accessComments: String?
-    let country: Country?
 
     enum CodingKeys: String, CodingKey {
         case postcode = "Postcode"
@@ -43,22 +42,7 @@ struct AddressInfo: Codable {
         case distanceUnit = "DistanceUnit"
         case title = "Title"
         case town = "Town"
-        case accessComments = "AccessComments"
-        case country = "Country"
-    }
-}
-
-// MARK: - Country
-struct Country: Codable {
-    let continentCode: String?
-    let id: Int?
-    let title, isoCode: String?
-
-    enum CodingKeys: String, CodingKey {
-        case continentCode = "ContinentCode"
-        case id = "ID"
-        case title = "Title"
-        case isoCode = "ISOCode"
+        case accessComments = "AccessComments"        
     }
 }
 
