@@ -1,0 +1,47 @@
+//
+//  ArtworkView.swift
+//  ChargingStationsApp
+//
+//  Created by Alaattin Bedir on 31.08.2022.
+//
+
+import Foundation
+import MapKit
+
+class ArtworkMarkerView: MKMarkerAnnotationView {
+  override var annotation: MKAnnotation? {
+    willSet {
+
+      canShowCallout = true
+      calloutOffset = CGPoint(x: -5, y: 5)
+      rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+
+      markerTintColor = .red
+      glyphImage = #imageLiteral(resourceName: "Monument")
+    }
+  }
+}
+
+class ArtworkView: MKAnnotationView {
+  override var annotation: MKAnnotation? {
+    willSet {
+      guard let artwork = newValue as? Artwork else {
+        return
+      }
+
+      canShowCallout = true
+      calloutOffset = CGPoint(x: -5, y: 5)
+      let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 48, height: 48)))
+      mapsButton.setBackgroundImage(#imageLiteral(resourceName: "Map"), for: .normal)
+      rightCalloutAccessoryView = mapsButton
+
+      image = #imageLiteral(resourceName: "Monument")
+
+      let detailLabel = UILabel()
+      detailLabel.numberOfLines = 0
+      detailLabel.font = detailLabel.font.withSize(14)
+      detailLabel.text = artwork.subtitle 
+      detailCalloutAccessoryView = detailLabel
+    }
+  }
+}

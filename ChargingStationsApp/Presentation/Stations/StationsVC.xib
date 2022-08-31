@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StationsVC" customModule="ChargingStationsApp" customModuleProvider="target">
             <connections>
-                <outlet property="stationTitle" destination="pDC-2s-Yc8" id="kYv-rn-leN"/>
+                <outlet property="mapView" destination="vMg-tH-XCV" id="cEP-GO-bdb"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Loy-V3-lqb"/>
             </connections>
         </placeholder>
@@ -19,22 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDC-2s-Yc8">
-                    <rect key="frame" x="50" y="438" width="314" height="20"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vMg-tH-XCV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </mapView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="pDC-2s-Yc8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="BQz-6V-CrZ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pDC-2s-Yc8" secondAttribute="trailing" constant="50" id="OS7-qR-ffh"/>
-                <constraint firstItem="pDC-2s-Yc8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nTa-SK-nvk"/>
-                <constraint firstItem="pDC-2s-Yc8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yYG-t5-N89"/>
+                <constraint firstItem="vMg-tH-XCV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4YV-b3-I5d"/>
+                <constraint firstAttribute="bottom" secondItem="vMg-tH-XCV" secondAttribute="bottom" id="dBH-dx-pbC"/>
+                <constraint firstItem="vMg-tH-XCV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hHY-Bw-yDN"/>
+                <constraint firstAttribute="trailing" secondItem="vMg-tH-XCV" secondAttribute="trailing" id="smM-BJ-lvn"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+            <point key="canvasLocation" x="123" y="-131"/>
         </view>
     </objects>
     <resources>
