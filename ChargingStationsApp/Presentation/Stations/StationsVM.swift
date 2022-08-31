@@ -13,6 +13,17 @@ import CoreLocation
 class StationsVM: BaseVM {
     @Published var stations: StationsResponse? = nil
     @Published var artworks: [Artwork] = []
+
+    private let apiService: StationsApiServiceProtocol
+
+    required convenience init() {
+        self.init(apiService: StationsApiService())
+    }
+
+    nonisolated init (apiService: StationsApiServiceProtocol = StationsApiService()) {
+        self.apiService = apiService
+        super.init()
+    }
 }
 
 extension StationsVM {
@@ -21,7 +32,8 @@ extension StationsVM {
                                      "latitude": Keeper.shared.latitude,
                                      "longitude": Keeper.shared.longitude]
 
-        StationsApi().fetchStations(params: params) { [weak self] (stations) in
+        self.loadingState = .loading
+        apiService.fetchStations(params: params) { [weak self] (stations) in
             guard let self = self else { return }
 
             self.stations = stations
@@ -38,7 +50,11 @@ extension StationsVM {
 
                 return Artwork(title: title, chargingStationAddress: address, numberOfChargingPoints: numberOfChargingPoints, coordinate: location)
             }
+
+            self.loadingState = .succes
+
         } failed: { error in
+            self.loadingState = .failed
             print(error)
         }
     }

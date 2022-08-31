@@ -18,7 +18,7 @@
 		84321E0628BE5421007CE42B /* StationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0528BE5421007CE42B /* StationsVM.swift */; };
 		84321E0F28BE57B1007CE42B /* MLBasicKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E0E28BE57B1007CE42B /* MLBasicKit */; };
 		84321E1228BE57D2007CE42B /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E1128BE57D2007CE42B /* MLNetworking */; };
-		84321E1528BE593C007CE42B /* StationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1428BE593C007CE42B /* StationsApi.swift */; };
+		84321E1528BE593C007CE42B /* StationsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1428BE593C007CE42B /* StationsApiService.swift */; };
 		84321E1928BE5CD2007CE42B /* StationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1828BE5CD2007CE42B /* StationsResponse.swift */; };
 		84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF928BE5212007CE42B /* Keeper.swift */; };
 		84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DFA28BE5212007CE42B /* SessionKeeper.swift */; };
@@ -64,7 +64,7 @@
 		84321DFA28BE5212007CE42B /* SessionKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionKeeper.swift; sourceTree = "<group>"; };
 		84321E0328BE540B007CE42B /* StationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVC.swift; sourceTree = "<group>"; };
 		84321E0528BE5421007CE42B /* StationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVM.swift; sourceTree = "<group>"; };
-		84321E1428BE593C007CE42B /* StationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApi.swift; sourceTree = "<group>"; };
+		84321E1428BE593C007CE42B /* StationsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApiService.swift; sourceTree = "<group>"; };
 		84321E1828BE5CD2007CE42B /* StationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsResponse.swift; sourceTree = "<group>"; };
 		84321E1E28BE65C1007CE42B /* StationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationsVC.xib; sourceTree = "<group>"; };
 		84641D0A28BF6AE00026316E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		84321E1328BE5918007CE42B /* Stations */ = {
 			isa = PBXGroup;
 			children = (
-				84321E1428BE593C007CE42B /* StationsApi.swift */,
+				84321E1428BE593C007CE42B /* StationsApiService.swift */,
 			);
 			path = Stations;
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 				84321E1D28BE5DDA007CE42B /* Endpoints.swift in Sources */,
 				84321E1C28BE5DD6007CE42B /* AppDomain.swift in Sources */,
 				84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */,
-				84321E1528BE593C007CE42B /* StationsApi.swift in Sources */,
+				84321E1528BE593C007CE42B /* StationsApiService.swift in Sources */,
 				84641D0E28BF6B6C0026316E /* ArtworkView.swift in Sources */,
 				84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */,
 				84321E0628BE5421007CE42B /* StationsVM.swift in Sources */,

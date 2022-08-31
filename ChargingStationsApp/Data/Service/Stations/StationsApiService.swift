@@ -8,9 +8,17 @@
 import Foundation
 import MLNetworking
 
-// MARK: - Stations model extension
+// MARK: - Stations Api Service Protocol
 
-class StationsApi {
+protocol StationsApiServiceProtocol {
+    func fetchStations(params: [String: Any]?,
+                       succeed:@escaping (StationsResponse) -> Void,
+                       failed:@escaping (ErrorMessage) -> Void)
+}
+
+// MARK: - Stations Api Service Implementation
+
+class StationsApiService: StationsApiServiceProtocol {
     func fetchStations(params: [String: Any]?,
                        succeed:@escaping (StationsResponse) -> Void,
                        failed:@escaping (ErrorMessage) -> Void) {
