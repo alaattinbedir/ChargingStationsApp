@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841A045E28C0957200AC2557 /* StationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0328BE540B007CE42B /* StationsVC.swift */; };
+		841A045F28C0957600AC2557 /* StationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0528BE5421007CE42B /* StationsVM.swift */; };
+		841A046028C0957D00AC2557 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84641D0A28BF6AE00026316E /* Artwork.swift */; };
+		841A046128C0958100AC2557 /* StationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1828BE5CD2007CE42B /* StationsResponse.swift */; };
+		841A046228C0958700AC2557 /* StationsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1428BE593C007CE42B /* StationsApiService.swift */; };
+		841A046328C0958D00AC2557 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84641D0D28BF6B6C0026316E /* ArtworkView.swift */; };
+		841A046428C095A000AC2557 /* StationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84321E1E28BE65C1007CE42B /* StationsVC.xib */; };
+		841A046528C095AD00AC2557 /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF728BE51F3007CE42B /* AppDomain.swift */; };
+		841A046628C095B200AC2557 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF628BE51F3007CE42B /* Endpoints.swift */; };
+		841A046728C095C300AC2557 /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF928BE5212007CE42B /* Keeper.swift */; };
+		841A046828C095CD00AC2557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC428BE50F5007CE42B /* AppDelegate.swift */; };
+		841A046928C095D000AC2557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC628BE50F5007CE42B /* SceneDelegate.swift */; };
+		841A047328C09B5500AC2557 /* StationsApiServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A047228C09B5500AC2557 /* StationsApiServiceStub.swift */; };
+		841A047628C0A02A00AC2557 /* StationsVMSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A047528C0A02900AC2557 /* StationsVMSpec.swift */; };
+		842B008328C0B0FD00EA189E /* MLBasicKit in Frameworks */ = {isa = PBXBuildFile; productRef = 842B008228C0B0FD00EA189E /* MLBasicKit */; };
+		842B008628C0B11A00EA189E /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 842B008528C0B11A00EA189E /* MLNetworking */; };
 		84321DC528BE50F5007CE42B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC428BE50F5007CE42B /* AppDelegate.swift */; };
 		84321DC728BE50F5007CE42B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DC628BE50F5007CE42B /* SceneDelegate.swift */; };
 		84321DCE28BE50F7007CE42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84321DCD28BE50F7007CE42B /* Assets.xcassets */; };
 		84321DD128BE50F7007CE42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84321DCF28BE50F7007CE42B /* LaunchScreen.storyboard */; };
-		84321DDC28BE50F7007CE42B /* ChargingStationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DDB28BE50F7007CE42B /* ChargingStationsAppTests.swift */; };
 		84321DE628BE50F7007CE42B /* ChargingStationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DE528BE50F7007CE42B /* ChargingStationsAppUITests.swift */; };
 		84321DE828BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DE728BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift */; };
 		84321E0428BE540B007CE42B /* StationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0328BE540B007CE42B /* StationsVC.swift */; };
 		84321E0628BE5421007CE42B /* StationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E0528BE5421007CE42B /* StationsVM.swift */; };
-		84321E0F28BE57B1007CE42B /* MLBasicKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E0E28BE57B1007CE42B /* MLBasicKit */; };
-		84321E1228BE57D2007CE42B /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 84321E1128BE57D2007CE42B /* MLNetworking */; };
 		84321E1528BE593C007CE42B /* StationsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1428BE593C007CE42B /* StationsApiService.swift */; };
 		84321E1928BE5CD2007CE42B /* StationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321E1828BE5CD2007CE42B /* StationsResponse.swift */; };
 		84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF928BE5212007CE42B /* Keeper.swift */; };
-		84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DFA28BE5212007CE42B /* SessionKeeper.swift */; };
 		84321E1C28BE5DD6007CE42B /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF728BE51F3007CE42B /* AppDomain.swift */; };
 		84321E1D28BE5DDA007CE42B /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF628BE51F3007CE42B /* Endpoints.swift */; };
 		84321E1F28BE65C1007CE42B /* StationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84321E1E28BE65C1007CE42B /* StationsVC.xib */; };
@@ -47,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841A047228C09B5500AC2557 /* StationsApiServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApiServiceStub.swift; sourceTree = "<group>"; };
+		841A047528C0A02900AC2557 /* StationsVMSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVMSpec.swift; sourceTree = "<group>"; };
 		84321DC128BE50F5007CE42B /* ChargingStationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargingStationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84321DC428BE50F5007CE42B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84321DC628BE50F5007CE42B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,14 +68,12 @@
 		84321DD028BE50F7007CE42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84321DD228BE50F7007CE42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84321DD728BE50F7007CE42B /* ChargingStationsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargingStationsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84321DDB28BE50F7007CE42B /* ChargingStationsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationsAppTests.swift; sourceTree = "<group>"; };
 		84321DE128BE50F7007CE42B /* ChargingStationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargingStationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84321DE528BE50F7007CE42B /* ChargingStationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationsAppUITests.swift; sourceTree = "<group>"; };
 		84321DE728BE50F7007CE42B /* ChargingStationsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84321DF628BE51F3007CE42B /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		84321DF728BE51F3007CE42B /* AppDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDomain.swift; sourceTree = "<group>"; };
 		84321DF928BE5212007CE42B /* Keeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keeper.swift; sourceTree = "<group>"; };
-		84321DFA28BE5212007CE42B /* SessionKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionKeeper.swift; sourceTree = "<group>"; };
 		84321E0328BE540B007CE42B /* StationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVC.swift; sourceTree = "<group>"; };
 		84321E0528BE5421007CE42B /* StationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVM.swift; sourceTree = "<group>"; };
 		84321E1428BE593C007CE42B /* StationsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApiService.swift; sourceTree = "<group>"; };
@@ -76,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84321E0F28BE57B1007CE42B /* MLBasicKit in Frameworks */,
-				84321E1228BE57D2007CE42B /* MLNetworking in Frameworks */,
+				842B008328C0B0FD00EA189E /* MLBasicKit in Frameworks */,
+				842B008628C0B11A00EA189E /* MLNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841A047028C09ABB00AC2557 /* APIStubs */ = {
+			isa = PBXGroup;
+			children = (
+				841A047228C09B5500AC2557 /* StationsApiServiceStub.swift */,
+			);
+			path = APIStubs;
+			sourceTree = "<group>";
+		};
+		841A047128C09ACF00AC2557 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				841A047428C09FEB00AC2557 /* Stations */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		841A047428C09FEB00AC2557 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				841A047528C0A02900AC2557 /* StationsVMSpec.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
 		84321DB828BE50F5007CE42B = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +170,8 @@
 		84321DDA28BE50F7007CE42B /* ChargingStationsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				84321DDB28BE50F7007CE42B /* ChargingStationsAppTests.swift */,
+				841A047028C09ABB00AC2557 /* APIStubs */,
+				841A047128C09ACF00AC2557 /* ViewModels */,
 			);
 			path = ChargingStationsAppTests;
 			sourceTree = "<group>";
@@ -170,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				84321DF928BE5212007CE42B /* Keeper.swift */,
-				84321DFA28BE5212007CE42B /* SessionKeeper.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -303,8 +339,8 @@
 			);
 			name = ChargingStationsApp;
 			packageProductDependencies = (
-				84321E0E28BE57B1007CE42B /* MLBasicKit */,
-				84321E1128BE57D2007CE42B /* MLNetworking */,
+				842B008228C0B0FD00EA189E /* MLBasicKit */,
+				842B008528C0B11A00EA189E /* MLNetworking */,
 			);
 			productName = ChargingStationsApp;
 			productReference = 84321DC128BE50F5007CE42B /* ChargingStationsApp.app */;
@@ -379,8 +415,8 @@
 			);
 			mainGroup = 84321DB828BE50F5007CE42B;
 			packageReferences = (
-				84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */,
-				84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */,
+				842B008128C0B0FD00EA189E /* XCRemoteSwiftPackageReference "MLBasicKit" */,
+				842B008428C0B11A00EA189E /* XCRemoteSwiftPackageReference "MLNetworking" */,
 			);
 			productRefGroup = 84321DC228BE50F5007CE42B /* Products */;
 			projectDirPath = "";
@@ -408,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841A046428C095A000AC2557 /* StationsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +472,6 @@
 				84321E1A28BE5DCF007CE42B /* Keeper.swift in Sources */,
 				84321E1528BE593C007CE42B /* StationsApiService.swift in Sources */,
 				84641D0E28BF6B6C0026316E /* ArtworkView.swift in Sources */,
-				84321E1B28BE5DD2007CE42B /* SessionKeeper.swift in Sources */,
 				84321E0628BE5421007CE42B /* StationsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +480,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84321DDC28BE50F7007CE42B /* ChargingStationsAppTests.swift in Sources */,
+				841A047628C0A02A00AC2557 /* StationsVMSpec.swift in Sources */,
+				841A046828C095CD00AC2557 /* AppDelegate.swift in Sources */,
+				841A046128C0958100AC2557 /* StationsResponse.swift in Sources */,
+				841A045F28C0957600AC2557 /* StationsVM.swift in Sources */,
+				841A046328C0958D00AC2557 /* ArtworkView.swift in Sources */,
+				841A046528C095AD00AC2557 /* AppDomain.swift in Sources */,
+				841A046028C0957D00AC2557 /* Artwork.swift in Sources */,
+				841A047328C09B5500AC2557 /* StationsApiServiceStub.swift in Sources */,
+				841A045E28C0957200AC2557 /* StationsVC.swift in Sources */,
+				841A046628C095B200AC2557 /* Endpoints.swift in Sources */,
+				841A046228C0958700AC2557 /* StationsApiService.swift in Sources */,
+				841A046728C095C300AC2557 /* Keeper.swift in Sources */,
+				841A046928C095D000AC2557 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +818,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */ = {
+		842B008128C0B0FD00EA189E /* XCRemoteSwiftPackageReference "MLBasicKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alaattinbedir/MLBasicKit.git";
 			requirement = {
@@ -778,7 +826,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */ = {
+		842B008428C0B11A00EA189E /* XCRemoteSwiftPackageReference "MLNetworking" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alaattinbedir/MLNetworking.git";
 			requirement = {
@@ -789,14 +837,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84321E0E28BE57B1007CE42B /* MLBasicKit */ = {
+		842B008228C0B0FD00EA189E /* MLBasicKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84321E0D28BE57B1007CE42B /* XCRemoteSwiftPackageReference "MLBasicKit" */;
+			package = 842B008128C0B0FD00EA189E /* XCRemoteSwiftPackageReference "MLBasicKit" */;
 			productName = MLBasicKit;
 		};
-		84321E1128BE57D2007CE42B /* MLNetworking */ = {
+		842B008528C0B11A00EA189E /* MLNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84321E1028BE57D2007CE42B /* XCRemoteSwiftPackageReference "MLNetworking" */;
+			package = 842B008428C0B11A00EA189E /* XCRemoteSwiftPackageReference "MLNetworking" */;
 			productName = MLNetworking;
 		};
 /* End XCSwiftPackageProductDependency section */

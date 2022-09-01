@@ -41,10 +41,10 @@ extension StationsVM {
                 let addressLine2 = $0.addressInfo?.addressLine2 ?? ""
                 let town = $0.addressInfo?.town ?? ""
                 let latitude = $0.addressInfo?.latitude ?? 0.0
-                let longtitude = $0.addressInfo?.longitude ?? 0.0
+                let longitude = $0.addressInfo?.longitude ?? 0.0
                 let numberOfChargingPoints = $0.numberOfPoints ?? 0
                 let address = addressLine1 + " " + addressLine2 + " " + town + "\n" + "Charging points: \(numberOfChargingPoints)"
-                let location = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+                let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
                 return Artwork(title: title, chargingStationAddress: address, numberOfChargingPoints: numberOfChargingPoints, coordinate: location)
             }
