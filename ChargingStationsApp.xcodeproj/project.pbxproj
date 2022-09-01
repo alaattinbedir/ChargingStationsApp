@@ -37,6 +37,7 @@
 		84321E1C28BE5DD6007CE42B /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF728BE51F3007CE42B /* AppDomain.swift */; };
 		84321E1D28BE5DDA007CE42B /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84321DF628BE51F3007CE42B /* Endpoints.swift */; };
 		84321E1F28BE65C1007CE42B /* StationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84321E1E28BE65C1007CE42B /* StationsVC.xib */; };
+		8438429828C0B771007900B3 /* StationsVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438429728C0B771007900B3 /* StationsVMTests.swift */; };
 		84641D0B28BF6AE00026316E /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84641D0A28BF6AE00026316E /* Artwork.swift */; };
 		84641D0E28BF6B6C0026316E /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84641D0D28BF6B6C0026316E /* ArtworkView.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		84321E1428BE593C007CE42B /* StationsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsApiService.swift; sourceTree = "<group>"; };
 		84321E1828BE5CD2007CE42B /* StationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsResponse.swift; sourceTree = "<group>"; };
 		84321E1E28BE65C1007CE42B /* StationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationsVC.xib; sourceTree = "<group>"; };
+		8438429728C0B771007900B3 /* StationsVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVMTests.swift; sourceTree = "<group>"; };
 		84641D0A28BF6AE00026316E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		84641D0D28BF6B6C0026316E /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			children = (
 				841A047028C09ABB00AC2557 /* APIStubs */,
 				841A047128C09ACF00AC2557 /* ViewModels */,
+				8438429728C0B771007900B3 /* StationsVMTests.swift */,
 			);
 			path = ChargingStationsAppTests;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				841A046028C0957D00AC2557 /* Artwork.swift in Sources */,
 				841A047328C09B5500AC2557 /* StationsApiServiceStub.swift in Sources */,
 				841A045E28C0957200AC2557 /* StationsVC.swift in Sources */,
+				8438429828C0B771007900B3 /* StationsVMTests.swift in Sources */,
 				841A046628C095B200AC2557 /* Endpoints.swift in Sources */,
 				841A046228C0958700AC2557 /* StationsApiService.swift in Sources */,
 				841A046728C095C300AC2557 /* Keeper.swift in Sources */,
